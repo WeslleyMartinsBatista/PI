@@ -31,14 +31,14 @@ public class HomeController {
 	
 	@FXML
 	private void entrarRascunho (ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("/com/biblioteca/view/home_pages/Rascunho.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/com/biblioteca/view/home_pages/Biblioteca.fxml"));
 	    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 	    stage.getScene().setRoot(root);
 	}
 	
 	@FXML
 	private void entrarConfiguracoes (ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("/com/biblioteca/view/home_pages/Configuracoes.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/com/biblioteca/view/home_pages/Biblioteca.fxml"));
 	    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 	    stage.getScene().setRoot(root);
 	}

@@ -41,7 +41,7 @@
 				    
 				</VBox>
 				
-				<!-- RASCUNHO --> 
+				<!-- BANCADA DE RASCUNHO --> 
 				<VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="cardAcesso" alignment="CENTER">
 		        
 				    <ImageView fitHeight="200" fitWidth="200" pickOnBounds="true" preserveRatio="true" >
@@ -53,7 +53,7 @@
 				    <Label text="Rascunho" styleClass="cardLabelTitulo"/>
 				    
 				    <HBox styleClass="hboxButtonAcessar" alignment="CENTER">
-				    	<Button text="Acessar" styleClass="buttonAcessar" onAction="#entrarRascunho"/>
+				    	<Button text="Acessar" styleClass="buttonAcessar" />
 				    </HBox>
 				    
 				</VBox>
@@ -70,7 +70,7 @@
 				    <Label text="Configurações" styleClass="cardLabelTitulo"/>
 				    
 				    <HBox styleClass="hboxButtonAcessar" alignment="CENTER">
-				    	<Button text="Acessar" styleClass="buttonAcessar" onAction="#entrarConfiguracoes"/>
+				    	<Button text="Acessar" styleClass="buttonAcessar" />
 				    </HBox>
 				    
 				</VBox>

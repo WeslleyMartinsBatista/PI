@@ -70,7 +70,7 @@
 				    <Label text="Configurações" styleClass="cardLabelTitulo"/>
 				    
 				    <HBox styleClass="hboxButtonAcessar" alignment="CENTER">
-				    	<Button text="Acessar" styleClass="buttonAcessar" onAction="#entrarConfiguracoes"/>
+				    	<Button text="Acessar" styleClass="buttonAcessar" onAction="#entrarRascunho"/>
 				    </HBox>
 				    
 				</VBox>
