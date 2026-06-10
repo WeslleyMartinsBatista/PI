@@ -1,0 +1,42 @@
+.modalContainer {
+    -fx-background-color: #F7F1E8;
+    -fx-background-radius: 8;
+}
+
+.modalTitulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B271E;
+}
+
+.modalLabel {
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+}
+
+.modalField {
+    -fx-pref-height: 32px;
+}
+
+.modalRadio {
+    -fx-font-size: 13px;
+}
+
+.btnPrimario {
+    -fx-background-color: #1B271E;
+    -fx-text-fill: white;
+    -fx-pref-width: 100px;
+}
+
+.btnPrimario:hover {
+    -fx-background-color: #2E4233;
+}
+
+.btnSecundario {
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #333333;
+}
+
+.btnSecundario:hover {
+    -fx-background-color: #aaaaaa;
+}
