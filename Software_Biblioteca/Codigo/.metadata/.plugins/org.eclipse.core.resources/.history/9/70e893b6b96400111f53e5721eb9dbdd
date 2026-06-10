@@ -1,0 +1,7 @@
+.sidebar{
+	-fx-padding: 10 10 10 10;
+}
+
+.labelTituloBiblioteca{
+	
+}

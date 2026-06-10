@@ -1,0 +1,7 @@
+CREATE TABLE livro (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo     TEXT NOT NULL,
+    autor      TEXT,
+    caminho_arquivo TEXT,  -- caminho do PDF/DOCX
+    caminho_capa    TEXT   -- caminho da imagem de capa (opcional)
+);

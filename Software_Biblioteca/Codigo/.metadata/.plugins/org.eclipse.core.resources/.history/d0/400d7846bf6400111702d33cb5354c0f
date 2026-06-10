@@ -1,0 +1,13 @@
+.sidebar{
+	-fx-padding: 10 20 10 20;
+	/*-fx-background-color: rgb(50, 50, 50, 0.50);*/
+}
+
+.labelTituloBiblioteca{
+	-fx-text-fill: #FFA500;
+	-fx-font-size: 28px;
+}
+
+.sidebarButtons{
+	-fx-background-color: transparent ;
+}

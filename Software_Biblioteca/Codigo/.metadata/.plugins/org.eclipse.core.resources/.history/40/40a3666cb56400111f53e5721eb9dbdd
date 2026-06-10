@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.BoxBlur?>
+
+<BorderPane fx:id="mainPane"
+	  xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.home_pages.BibliotecaController"
+      stylesheets="@/com/biblioteca/style/home_pages/Biblioteca.css"
+      VBox.vgrow="ALWAYS">
+      
+	<!-- Imagem de fundo com blur -->
+    <ImageView fitWidth="1920" fitHeight="1080" preserveRatio="false">
+        <image>
+            <Image url="@/com/biblioteca/image/background/home_pages/biblioteca/biblioteca-background.jpg"/>
+        </image>
+        <effect>
+            <BoxBlur width="15" height="15" iterations="3"/>
+        </effect>
+    </ImageView>
+
+    <!-- Overlay escuro opcional (melhora legibilidade) -->
+    <Pane styleClass="overlay"/>
+	
+	<left>
+	
+		<VBox>
+			<HBox>
+				<Button GridPane.columnIndex="1" GridPane.rowIndex="0" contentDisplay="TOP" styleClass="buttonHome">
+			        <graphic>
+		                <ImageView fitHeight="258.0" fitWidth="258" pickOnBounds="true" preserveRatio="true">
+		                    <image>
+		                        <Image url="@/com/biblioteca/image/icons/home/bancada-de-corte.png" />
+		                    </image>
+		                </ImageView>
+		            </graphic>
+		        </Button>
+			</HBox>
+			<Label text="BIBLIOTECA" />
+		</VBox>
+		
+	</left>
+	
+	<center>
+		
+		<VBox>
+			<TextField promptText="Buscar"  />
+		</VBox>	
+		
+	</center>
+      
+</BorderPane>

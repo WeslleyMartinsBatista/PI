@@ -1,0 +1,27 @@
+package com.biblioteca.controller.home_pages;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.application.Platform;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class BibliotecaController implements Initializable {
+
+    @FXML
+    private BorderPane mainPane;
+
+    @FXML
+    private ImageView backgroundImage;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        BoxBlur blur = new BoxBlur(20, 20, 3);
+        backgroundImage.setEffect(blur);
+
+        Platform.runLater(() -> mainPane.requestFocus());
+    }
+}

@@ -1,0 +1,41 @@
+.root {
+	/*-fx-background-color: radial-gradient(
+		    center 50% 50%,
+		    radius 110%,
+		    #6ea8ff 0%,
+		    #5c9eff 15%,
+		    #4a93ff 30%,
+		    #3a88f5 45%,
+		    #2f7de8 60%,
+		    #256fd8 75%,
+		    #1e63c4 90%,
+		    #1a58b0 100%
+		);*/
+		
+		-fx-background-color: #172542;
+}
+
+#loginCard {
+	-fx-background-color: #d8e0e7;
+	-fx-background-radius: 10;
+	-fx-padding: 40 40 40 40; /* Cima, Direita, Baixo, Esquerda */
+}
+
+#labelTitulo {
+	-fx-font-size: 20px;
+	-fx-padding: 20 0 20 0;
+}
+
+.labelInformativo {
+	-fx-font-size: 16px;
+}
+
+#LoginButtonEntrar {
+	-fx-background-color: #2ecc71;
+	-fx-font-size: 15px;
+	-fx-pref-width: 100px;
+}
+
+.labelErro {
+	-fx-text-fill: red;
+}

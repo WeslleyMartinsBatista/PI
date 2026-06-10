@@ -1,0 +1,32 @@
+package com.biblioteca.controller;
+
+import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+
+public class HomeController {
+	
+	@FXML
+	private void entrarBiblioteca (ActionEvent event) throws IOException{
+		Parent root = FXMLLoader.load(getClass().getResource("/com/biblioteca/view/home_pages/Biblioteca.fxml"));
+	    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+	    stage.getScene().setRoot(root);
+	}
+	
+}

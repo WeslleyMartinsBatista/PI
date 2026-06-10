@@ -1,0 +1,19 @@
+.sidebar{
+	-fx-padding: 10 20 10 20;
+	-fx-background-color: #1B271E;
+}
+
+.buttonVoltar{
+	-fx-background-color: transparent ;
+}
+
+.labelTituloBiblioteca{
+	-fx-text-fill: #FFA500;
+	-fx-font-size: 28px;
+	-fx-padding: 10 10 10 10;
+}
+
+.sidebarButtons{
+	-fx-text-fill: white;
+	-fx-background-color: transparent ;
+}

@@ -1,0 +1,29 @@
+.root {
+    /*-fx-background-color: #1B271E; */
+	
+	-fx-background-image: url("/com/biblioteca/image/background/home/home-background.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.cardAcesso{
+	-fx-background-color: #F7F1E8;
+	-fx-background-radius: 10;
+	-fx-padding: 50 50 50 50;
+}
+
+.cardLabelTitulo{
+	-fx-font-family: "Georgia" !important;
+	-fx-font-size: 20px;
+}
+
+
+.buttonAcessar{
+	-fx-background-color: #71401B;
+	-fx-text-fill: white;
+}
+
+.buttonAcessar:hover{ /* mouse em cima */
+	-fx-background-color: #8B5328;
+}

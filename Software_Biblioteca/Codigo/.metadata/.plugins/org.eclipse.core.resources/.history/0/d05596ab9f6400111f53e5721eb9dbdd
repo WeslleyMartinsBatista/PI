@@ -1,0 +1,33 @@
+.root {
+	/*-fx-background-color: #172542;*/
+	
+	-fx-background-image: url("/com/biblioteca/image/background/login/login-background.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+#loginCard {
+	-fx-background-color: #F7F1E8;
+	-fx-background-radius: 10;
+	-fx-padding: 40 40 40 40; /* Cima, Direita, Baixo, Esquerda */
+}
+
+#labelTitulo {
+	-fx-font-size: 20px;
+	-fx-padding: 20 0 20 0;
+}
+
+.labelInformativo {
+	-fx-font-size: 16px;
+}
+
+#LoginButtonEntrar {
+	-fx-background-color: #223725;
+	-fx-font-size: 15px;
+	-fx-pref-width: 100px;
+}
+
+.labelErro {
+	-fx-text-fill: red;
+}

@@ -1,0 +1,15 @@
+package com.biblioteca.controller.home_pages;
+
+public class BibliotecaController {
+	
+	@FXML
+	private ImageView backgroundImage;
+	
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+	    BoxBlur blur = new BoxBlur(20, 20, 3);
+	    backgroundImage.setEffect(blur);
+	    
+	    Platform.runLater(() -> mainPane.requestFocus());
+	}
+}

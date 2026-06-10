@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.BoxBlur?>
+
+<BorderPane fx:id="mainPane"
+	  xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.home_pages.BibliotecaController"
+      stylesheets="@/com/biblioteca/style/home_pages/Biblioteca.css"
+      VBox.vgrow="ALWAYS">
+      
+	<Pane styleClass="bg-blur" >
+		<effect>
+	        <BoxBlur width="15" height="15" iterations="3"/>
+	    </effect>
+	</Pane>
+	
+	<left>
+	
+		<VBox>
+			<Label text="BIBLIOTECA" />
+		</VBox>
+		
+	</left>
+	
+	<center>
+	
+		<TextField promptText="Buscar"  />
+		
+	</center>
+      
+</BorderPane>

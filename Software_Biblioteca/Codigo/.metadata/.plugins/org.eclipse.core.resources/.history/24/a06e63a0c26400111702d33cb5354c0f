@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.control.Separator?>
+
+<BorderPane fx:id="mainPane"
+	  xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.home_pages.BibliotecaController"
+      stylesheets="@/com/biblioteca/style/home_pages/Biblioteca.css"
+      VBox.vgrow="ALWAYS">
+	
+	<ImageView fx:id="backgroundImage"
+               fitWidth="1920" fitHeight="1080"
+               pickOnBounds="false" preserveRatio="false"
+               mouseTransparent="true">
+        <image>
+            <Image url="@/com/biblioteca/image/background/home_pages/biblioteca/biblioteca-background.png" />
+        </image>
+    </ImageView>
+	
+	<left>
+	
+		<VBox styleClass="sidebar">
+		
+			<HBox>
+				
+				<Button styleClass="buttonVoltar" onAction="voltarHome">
+			        <graphic>
+		                <ImageView fitHeight="16" fitWidth="16" pickOnBounds="true" preserveRatio="true" >
+		                    <image>
+		                        <Image url="@/com/biblioteca/image/icons/home_pages/biblioteca/seta-esquerda.png" />
+		                    </image>
+		                </ImageView>
+		            </graphic>
+		        </Button>
+
+			</HBox>
+			
+			<HBox alignment="CENTER" styleClass="hboxLabelTitulo">
+			
+				<Label text="BIBLIOTECA" styleClass="labelTituloBiblioteca"/>
+				
+			</HBox>
+			
+			<VBox styleClass="vboxButtons" spacing="15.0">
+			
+				<Button text="Adicionar livro" styleClass="sidebarButtons"/>
+				
+				<Button text="Adicionar video" styleClass="sidebarButtons"/>
+				
+				<Separator orientation="HORIZONTAL" prefWidth="50" />
+				
+				<Button text="Criar Categoria" styleClass="sidebarButtons"/>
+				
+				<Button text="Remover Categoria" styleClass="sidebarButtons"/>
+			
+			</VBox>
+			
+			
+			
+			
+			
+		</VBox>
+		
+	</left>
+	
+	<center>
+		
+		
+		
+	</center>
+      
+</BorderPane>

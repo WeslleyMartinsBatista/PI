@@ -1,0 +1,14 @@
+.root {
+    /*-fx-background-color: #1B271E; */
+	
+	-fx-background-image: url("/com/biblioteca/image/background/home/home-background.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.cardAcesso{
+	-fx-background-color: #F7F1E8;
+	-fx-background-radius: 10;
+}
+

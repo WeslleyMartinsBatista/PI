@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Merriweather';
+    /* Caminho relativo para o arquivo .ttf */
+    src: url('Merriweather_24pt-Bold.ttf'); 
+}
+
+.root {
+    -fx-background-color: #1B271E; 
+}
+
+
+.buttonHome{
+	-fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.sidebar{
+	-fx-background-color: #1B271E;
+}
+
+.sidebarLabelTitulo{
+	-fx-font-family: 'Merriweather';
+    -fx-font-size: 16px;
+    /*-fx-font-weight: bold; /* Opcional: negrito */
+	/*-fx-font-style: italic; /* Opcional: itálico */
+}

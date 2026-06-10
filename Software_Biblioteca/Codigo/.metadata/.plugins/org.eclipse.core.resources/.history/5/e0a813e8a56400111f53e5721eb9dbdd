@@ -1,0 +1,13 @@
+.root {
+    /*-fx-background-color: #1B271E; */
+	
+	-fx-background-image: url("/com/biblioteca/image/background/home/home-background.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+}
+
+.buttonHome{
+	-fx-background-color: rgba(128, 128, 128, 0.5);
+}
+

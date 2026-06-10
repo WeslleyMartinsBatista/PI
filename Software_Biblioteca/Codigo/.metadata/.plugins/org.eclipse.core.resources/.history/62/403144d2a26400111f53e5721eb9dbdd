@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: #1B271E; 
+}
+
+.buttonHome{
+	-fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.sidebar{
+	-fx-background-color: #1B271E;
+}
+
+.sidebarLabelTitulo{
+	
+	-fx-font-family: "DejaVu Serif" /* Merriweather */
+    -fx-font-size: 20pt;
+	-fx-text-fill: white;
+   /*-fx-font-weight: bold;*/ /* Opcional: negrito */
+	/*-fx-font-style: italic;*/ /* Opcional: itálico */
+}

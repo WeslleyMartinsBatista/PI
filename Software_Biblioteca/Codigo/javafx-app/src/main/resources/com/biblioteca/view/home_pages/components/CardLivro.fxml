@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.home_pages.components.CardLivroController"
+      fx:id="cardRoot"
+      styleClass="cardLivro"
+      spacing="8"
+      prefWidth="140" prefHeight="210"
+      alignment="TOP_CENTER">
+
+    <ImageView fx:id="imageCapa"
+               fitWidth="120" fitHeight="160"
+               preserveRatio="true" pickOnBounds="true"/>
+
+    <Label fx:id="labelTitulo"
+           styleClass="cardTitulo"
+           wrapText="true" maxWidth="130"
+           textAlignment="CENTER"/>
+
+</VBox>

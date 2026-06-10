@@ -1,0 +1,7 @@
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/MainApp.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/controller/HomeController.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/controller/LoginController.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/controller/home_pages/AdicionarLivroController.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/controller/home_pages/BibliotecaController.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/controller/home_pages/components/CardLivroController.java
+/home/weslley/Documentos/SENAC/Software_Biblioteca/Codigo/javafx-app/src/main/java/com/biblioteca/model/Livro.java

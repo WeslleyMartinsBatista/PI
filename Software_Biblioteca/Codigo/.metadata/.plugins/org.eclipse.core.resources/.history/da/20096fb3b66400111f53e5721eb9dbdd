@@ -1,0 +1,8 @@
+.root {
+	
+	-fx-background-image: url("/com/biblioteca/image/background/home_pages/biblioteca/biblioteca-background.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+
+}

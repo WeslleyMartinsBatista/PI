@@ -1,0 +1,64 @@
+package com.biblioteca.controller;
+
+import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+public class LoginController {
+
+    @FXML private TextField textfieldUsuario;
+    	@FXML private Label labelErroUsuario;
+    
+    @FXML private PasswordField textfieldSenha;
+    	@FXML private Label labelErroSenha;
+    
+    @FXML private Button LoginButtonEntrar;
+    	@FXML private Label labelErroEntrar;
+
+    @FXML
+    private void EfetuarLogin(ActionEvent event) throws IOException {
+        String usuario = textfieldUsuario.getText();
+        String senha = textfieldSenha.getText();
+
+        labelErroUsuario.setVisible(false);
+        labelErroSenha.setVisible(false);
+        labelErroEntrar.setVisible(false);
+
+        // Validação de campos vazios
+        if (usuario.isEmpty() || senha.isEmpty()) {
+            if (usuario.isEmpty()) labelErroUsuario.setVisible(true);
+            if (senha.isEmpty())   labelErroSenha.setVisible(true);
+            return;
+        }
+        
+        if (usuario.equals("weslley") && senha.equals("123")) {
+        	
+        	Parent root = FXMLLoader.load(getClass().getResource("/com/autoPecasDoTiao/view/administrador/Home.fxml"));
+	        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+	        stage.getScene().setRoot(root);
+	        
+        } else {
+        	labelErroEntrar.setVisible(true);
+        }
+    }
+
+    @FXML
+    private void irParaSenha(ActionEvent event) {
+    	textfieldSenha.requestFocus();
+    }
+}

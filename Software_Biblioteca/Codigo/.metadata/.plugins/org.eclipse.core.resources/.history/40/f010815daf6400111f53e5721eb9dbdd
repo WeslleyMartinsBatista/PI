@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.BoxBlur?>
+
+<BorderPane fx:id="mainPane"
+	  xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.HomeController"
+      stylesheets="@/com/biblioteca/style/Home.css"
+      VBox.vgrow="ALWAYS">
+	
+	<center>
+	
+		<StackPane alignment="CENTER" >
+
+			<!-- Camada dos Botões: Fica na frente e continua 100% nítida -->
+		    <GridPane hgap="20" vgap="20"
+		              maxWidth="-Infinity"
+		              maxHeight="-Infinity">
+		              
+		        <!-- BIBLIOTECA --> 
+		        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="cardAcesso" alignment="CENTER">
+		        
+				    <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" >
+				        <image>
+				            <Image url="@/com/biblioteca/image/icons/home/biblioteca.png" />
+				        </image>
+				    </ImageView>
+				
+				    <Label text="Biblioteca" styleClass=""/>
+				    
+				    <Button text="Acessar" styleClass="buttonAcessar" />
+				    
+				</VBox>
+				
+				<!-- BANCADA DE RASCUNHO --> 
+				<VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="cardAcesso" alignment="CENTER">
+		        
+				    <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" >
+				        <image>
+				            <Image url="@/com/biblioteca/image/icons/home/rascunho.png" />
+				        </image>
+				    </ImageView>
+				
+				    <Label text="Bancada de rascunho"/>
+				    
+				    <Button text="Acessar" styleClass="buttonAcessar" />
+				    
+				</VBox>
+				
+				<!-- CONFIGURAÇÕES --> 
+				<VBox GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="cardAcesso" alignment="CENTER">
+		        
+				    <ImageView fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" >
+				        <image>
+				            <Image url="@/com/biblioteca/image/icons/home/configuracoes.png" />
+				        </image>
+				    </ImageView>
+				
+				    <Label text="Configurações"/>
+				    
+				    <Button text="Acessar" styleClass="buttonAcessar" />
+				    
+				</VBox>
+		        
+		    </GridPane>
+		
+		</StackPane>
+		
+	</center>
+      
+</BorderPane>

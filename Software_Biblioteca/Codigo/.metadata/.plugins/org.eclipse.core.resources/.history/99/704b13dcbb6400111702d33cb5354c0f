@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.BoxBlur?>
+
+<BorderPane fx:id="mainPane"
+	  xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.biblioteca.controller.home_pages.BibliotecaController"
+      stylesheets="@/com/biblioteca/style/home_pages/Biblioteca.css"
+      VBox.vgrow="ALWAYS">
+	
+	<ImageView fx:id="backgroundImage"
+               fitWidth="1920" fitHeight="1080"
+               pickOnBounds="false" preserveRatio="false"
+               mouseTransparent="true">
+        <image>
+            <Image url="@/com/biblioteca/image/background/home_pages/biblioteca/biblioteca-background.png" />
+        </image>
+    </ImageView>
+	
+	<left>
+	
+		<VBox styleClass="sidebar">
+		
+			<HBox>
+				<!--
+				<Button GridPane.columnIndex="1" GridPane.rowIndex="0" contentDisplay="TOP" styleClass="buttonHome">
+			        <graphic>
+		                <ImageView fitHeight="258.0" fitWidth="258" pickOnBounds="true" preserveRatio="true">
+		                    <image>
+		                        <Image url="@/com/biblioteca/image/icons/home/bancada-de-corte.png" />
+		                    </image>
+		                </ImageView>
+		            </graphic>
+		        </Button>
+		        -->
+			</HBox>
+			
+			<HBox alignment="CENTER" styleClass="hboxLabelTitulo">
+			
+				<Label text="BIBLIOTECA" styleClass="labelTituloBiblioteca"/>
+				
+			</HBox>
+			
+			<VBox styleClass="vboxButtons">
+			
+				<Button text="Adicionar livro" />
+				
+				<Button text="Adicionar video" />
+				
+				<Button text="Criar Categoria" />
+			
+			</VBox>
+			
+		</VBox>
+		
+	</left>
+	
+	<center>
+		
+		
+		
+	</center>
+      
+</BorderPane>

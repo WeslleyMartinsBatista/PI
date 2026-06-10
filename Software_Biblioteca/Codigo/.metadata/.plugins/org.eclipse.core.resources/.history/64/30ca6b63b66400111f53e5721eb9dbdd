@@ -1,0 +1,13 @@
+.root {
+    /*-fx-background-color: #1a1a1a;*/
+	
+    -fx-background-image: url("/com/biblioteca/image/background/home_pages/biblioteca/biblioteca-background.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.45);
+}
